@@ -197,7 +197,7 @@
                     </p>
                     <h3 class="inline">오시는 길</h3>
                     <div style="margin-top: 20px">
-                        <span style="font-family: 'MapoFlowerIsland'">서울특별시 중구 필동로 5길 7 라비두스</span>
+                        <span style="font-family: 'MapoFlowerIsland'">서울특별시 중구 필동로 5길 7 라비두스++</span>
                     </div>
                 </div>
                 <div class="col-md-offset-2 col-md-8 animation fadeIn animated" style="visibility: visible;padding-top: 10px; padding-bottom: 30px">
@@ -730,6 +730,9 @@
         });
     }
 
+    let markers = new Array(); // 마커 정보를 담는 배열
+    let infoWindows = new Array(); // 정보창을 담는 배열
+
     var mapOptions = {
         center: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
         draggable: false,
@@ -749,7 +752,6 @@
     map: map
 
     });
-
 
     var infoWindow = new naver.maps.InfoWindow({
         content: '<div style="width:200px;text-align:center;padding:10px;"><b>라비두스</b><br> - 네이버 지도 - </div>'
