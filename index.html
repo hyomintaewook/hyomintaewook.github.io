@@ -731,17 +731,17 @@
     }
 
 
-    // var mapOptions = {
-    //     center: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
-    //     draggable: false,
-    //     zoom: 15
-    // };
+    var mapOptions = {
+        center: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
+        draggable: false,
+        zoom: 15
+    };
 
-    // var map = new naver.maps.Map('map-canvas', mapOptions);
-    // var marker = new naver.maps.Marker({
-    //     position: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
-    //     map: map
-    // });
+    var map = new naver.maps.Map('map-canvas', mapOptions);
+    var marker = new naver.maps.Marker({
+        position: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
+        map: map
+    });
 
     // var marker = new naver.maps.Marker({
 
@@ -752,21 +752,21 @@
     // });
 
 
-    var lavie = new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
-        map = new naver.maps.Map('map', {
-            center: lavie.destinationPoint(0, 500),
-            zoom: 15
-        }),
-        marker = new naver.maps.Marker({
-            map: map,
-            position: lavie
-        });
+    // var lavie = new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
+    //     map = new naver.maps.Map('map', {
+    //         center: lavie.destinationPoint(0, 500),
+    //         zoom: 15
+    //     }),
+    //     marker = new naver.maps.Marker({
+    //         map: map,
+    //         position: lavie
+    //     });
 
     var contentString = [
             '<div class="iw_inner">',
             '   <h3>라비두스</h3>',
-            '   <p>서울특별시 중구 필동로 5길 7 라비두스<br />',
-            '   <a href="http://www.laviedouce.co.kr/page/location" target="_blank">www.laviedouce.co.kr/page/location</a>',
+            '   <p>'
+            '   <a href="http://www.laviedouce.co.kr/page/location" target="_blank">라비두스</a>',
             '   </p>',
             '</div>'
         ].join('');
