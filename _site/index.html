@@ -627,7 +627,7 @@
     </section>
 
     <section id="contact">
-        <div class="image-divider auto-height" style="background-image:url(images/footer.jpg); padding-bottom: 100px;padding-top: 100px;">
+        <div class="image-divider auto-height" style="background-image:url(images/footer.jpeg); padding-bottom: 100px;padding-top: 100px;">
 
             <div class="divider-overlay"></div>
 
@@ -729,17 +729,27 @@
             alert("복사되었습니다.");
         });
     }
+
     var mapOptions = {
-        center: new naver.maps.LatLng(37.3588812, 127.1052781),
+        center: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
         draggable: false,
-        zoom: 14
+        zoom: 15
     };
 
     var map = new naver.maps.Map('map-canvas', mapOptions);
     var marker = new naver.maps.Marker({
-        position: new naver.maps.LatLng(37.3588812, 127.1052781),
+        position: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
         map: map
     });
+
+    var marker = new naver.maps.Marker({
+
+    position: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
+
+    map: map
+
+    });
+
 
     $('.slider-for').slick({
         slidesToShow: 1,

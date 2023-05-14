@@ -730,7 +730,6 @@
         });
     }
 
-
     var mapOptions = {
         center: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
         draggable: false,
@@ -743,49 +742,13 @@
         map: map
     });
 
-    // var marker = new naver.maps.Marker({
+    var marker = new naver.maps.Marker({
 
-    // position: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
+    position: new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
 
-    // map: map
+    map: map
 
-    // });
-
-
-    var lavie = new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
-        map = new naver.maps.Map('map', {
-            center: lavie.destinationPoint(0, 500),
-            zoom: 15
-        }),
-        marker = new naver.maps.Marker({
-            map: map,
-            position: lavie
-        });
-
-    var contentString = [
-            '<div class="iw_inner">',
-            '   <h3>라비두스</h3>',
-            '   <p>'
-            '   <a href="http://www.laviedouce.co.kr/page/location" target="_blank">라비두스</a>',
-            '   </p>',
-            '</div>'
-        ].join('');
-
-    var infowindow = new naver.maps.InfoWindow({
-        content: contentString
     });
-
-    naver.maps.Event.addListener(marker, "click", function(e) {
-        if (infowindow.getMap()) {
-            infowindow.close();
-        } else {
-            infowindow.open(map, marker);
-        }
-    });
-
-    infowindow.open(map, marker);
-
-
 
 
     $('.slider-for').slick({
