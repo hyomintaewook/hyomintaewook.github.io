@@ -752,15 +752,15 @@
     // });
 
 
-    // var lavie = new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
-    //     map = new naver.maps.Map('map', {
-    //         center: lavie.destinationPoint(0, 500),
-    //         zoom: 15
-    //     }),
-    //     marker = new naver.maps.Marker({
-    //         map: map,
-    //         position: lavie
-    //     });
+    var lavie = new naver.maps.LatLng(37.55674705142763, 126.99631152587007),
+        map = new naver.maps.Map('map', {
+            center: lavie.destinationPoint(0, 500),
+            zoom: 15
+        }),
+        marker = new naver.maps.Marker({
+            map: map,
+            position: lavie
+        });
 
     var contentString = [
             '<div class="iw_inner">',
